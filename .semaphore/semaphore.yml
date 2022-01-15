@@ -12,5 +12,11 @@ blocks:
           commands:
             - checkout
             - sem-version ruby 2.6.0
+            - 'gem install bundler:2.2.18'
             - bundle install
+  - name: Repsc
+    task:
+      jobs:
+        - name: rspec
+          commands:
             - bundle exec rspec
