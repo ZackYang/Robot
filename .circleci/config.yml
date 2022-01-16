@@ -31,7 +31,7 @@ jobs:
       - ruby/install-deps
       # Here we make sure that the secondary container boots
       # Run rspec in parallel
-      - ruby/rspec-test
+      - run: bundle exec rspec
 
 # We use workflows to orchestrate the jobs that we declared above.
 workflows:
