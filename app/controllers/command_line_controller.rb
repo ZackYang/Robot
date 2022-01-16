@@ -14,7 +14,7 @@ class CommandLineController
   private
 
   def parse_cmd(cmd)
-    cmd.split("\s").first&.downcase.to_sym
+    cmd.split("\s").first&.downcase&.to_sym
   end
 
   def parse_arguments(cmd)
