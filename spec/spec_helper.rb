@@ -1,8 +1,5 @@
 # frozen_string_literal: true
 
-require 'simplecov'
-SimpleCov.start
-
 ENV['ENV'] ||= 'test'
 
 require File.join(File.dirname(File.dirname(__FILE__)), 'application.rb')
