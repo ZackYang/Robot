@@ -1,7 +1,7 @@
 # frozen_string_literal: true
 
 ENV['ENV'] ||= 'production'
-require File.join(File.dirname(File.dirname(__FILE__)), 'application.rb')
+require File.join(__dir__, 'application.rb').to_s
 
 controller = CommandLineController.new
 
