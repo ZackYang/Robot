@@ -30,6 +30,10 @@ jobs:
       - checkout
       - ruby/install-deps
       # Here we make sure that the secondary container boots
+      - run:
+          name: rubocop
+          command: |
+            bundle exec rubocop
       # Run rspec in parallel
       - run: bundle exec rspec
 
